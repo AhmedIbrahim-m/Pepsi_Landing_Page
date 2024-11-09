@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto',sans-serif;
+  overflow-x:hidden ;
+  overflow-y: hidden;
+
+}
+.container{
+  margin: 0 7rem;
+  height: 100%;
+}
+a{
+  text-decoration: none;
+  
+}
+ul{
+  list-style: none;
+
+}
+.home{
+  height: 100vh;
+  background-color: #0162be;
+  color: white;
+
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+nav .logo{
+  width: 50px;
+}
+nav ul{
+  display: flex;
+  padding: 25px 0;
+  align-items: center;
+
+}
+nav ul a{
+  color: white;
+  padding: 20px;
+}
+.home-content{
+  display: flex;
+  justify-content: space-between;
+  align-items:center ;
+  height: 70%;
+}
+.home-content img{
+  width: 220px;
+  animation: animation1 1s ease-out;
+}
+.home-content h1{
+  font-size: 40px;
+  margin-bottom:10px;
+  font-weight: 900;
+
+}
+.home-content h1 span{
+  font-size: 70px;
+}
+.home-content p{
+  font-weight: 300;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  width: 60%;
+}
+.btn{
+  font-size: 14px;
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  transition: all 0.3s;
+
+}
+.btn:hover{
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid white;
+}
+.social{
+  margin-left: 3rem;
+  animation: animation1 1s ease-out;
+
+}
+.social i{
+  color: white;
+  font-size: 25px;
+  margin: 10px 0;
+
+}
+.types{
+  display:block;
+  width: 100px;
+  margin: auto;
+ 
+  animation: animation2 1s ease-out;
+}
+@keyframes animation1{
+  0%{
+    transform: translateX(500px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes animation2{
+  0%{
+    transform: translateY(200px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+
+
+@media(max-width:900px){
+
+  .container{
+    margin: 0 1rem;
+  }
+  
+  nav ul a{
+    padding: 10px;
+  }
+  .home-content{
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0 0;
+  }
+  .home-content  .content-text p{
+    width: 100%;
+  }
+  .content-text{
+    margin-bottom: 2rem;
+
+  }
+  .home-content img{
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  .social{
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  .types{
+   margin-top: 65px;
+  }
+}
